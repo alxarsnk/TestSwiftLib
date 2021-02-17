@@ -6,12 +6,19 @@
 //
 
 import UIKit
+import TestSwiftLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        showAlert(title: "Title", message: "Message", actionTitle: "Action", completion: { [weak self] in
+            self?.view.backgroundColor = .gray
+        })
     }
 
 
