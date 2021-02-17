@@ -15,7 +15,7 @@ This CocoaPods library helps you perform calculation.
   spec.ios.deployment_target = "13.0"
   spec.swift_version = "4.2"
 
-  spec.source        = { :git => "https://github.com/alxarsnk/TestSwiftLib.git", :tag => "#{spec.version}" }
+  spec.source        = { :git => "https://github.com/alxarsnk/TestSwiftLib.git", :branch => "main", :tag => "#{spec.version} }
   spec.source_files  = "TestSwiftLib/**/*.{h,m,swift}"
 
 end
